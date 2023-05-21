@@ -1,4 +1,4 @@
-#include "Screen.h"
+#include "Screen.hpp"
 
 Screen::Screen(int width, int height, int fps) : _width(width), _height(height) {
     Screen::FPS = fps;

@@ -1,5 +1,5 @@
-#ifndef COLOR_H
-#define COLOR_H
+#ifndef COLOR_HPP
+#define COLOR_HPP
 
 #include <iostream>
 #include <sstream>
@@ -28,4 +28,4 @@ public:
 	}
 };
 
-#endif COLOR_H
+#endif COLOR_HPP

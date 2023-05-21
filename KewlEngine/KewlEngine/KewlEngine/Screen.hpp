@@ -1,11 +1,11 @@
-#ifndef SCREEN_H
-#define SCREEN_H
+#ifndef SCREEN_HPP
+#define SCREEN_HPP
 
 #pragma once
 #include <vector>
 #include <windows.h>
-#include "Texture.h"
-#include "Pixel.h"
+#include "Texture.hpp"
+#include "Pixel.hpp"
 
 class Screen {
 private:
@@ -24,4 +24,4 @@ public:
 	virtual void fillScreen(Color c);
 };
 
-#endif SCREEN_H
+#endif SCREEN_HPP

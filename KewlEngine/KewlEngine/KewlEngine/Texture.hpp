@@ -1,7 +1,7 @@
-#ifndef TEXTURE_H
-#define TEXTURE_H
+#ifndef TEXTURE_HPP
+#define TEXTURE_HPP
 
-#include "Color.h"
+#include "Color.hpp"
 #include <vector>
 #include <string>
 
@@ -19,4 +19,4 @@ public:
 	virtual Color getPixel(int x, int y) const;
 };
 
-#endif TEXTURE_H
+#endif TEXTURE_HPP

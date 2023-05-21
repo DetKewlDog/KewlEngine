@@ -1,9 +1,8 @@
 #include <iostream>
-#include "Texture.h"
-#include "Screen.h"
+#include "Texture.hpp"
+#include "Screen.hpp"
 
 int main() {
-	std::cout << std::endl;
 	Screen screen(316, 180, 10);
 	for (int x = 0; x < screen.width(); x++) {
 		float val = (float)x / (float)(screen.width() - 1) * 255;

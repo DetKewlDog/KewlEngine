@@ -1,12 +1,12 @@
-#ifndef PIXEL_H
-#define PIXEL_H
+#ifndef PIXEL_HPP
+#define PIXEL_HPP
 
 #pragma once
 #include <thread>
 #include <stdio.h>
 #include <chrono>
 #include <iostream>
-#include "Screen.h"
+#include "Screen.hpp"
 
 
 class Screen;
@@ -33,9 +33,8 @@ public:
 		if (c == this->_color) return;
 		this->_color = c;
 		SetConsoleCursorPosition(this->_hConsole, this->_pos);
-		const char* buff = this->_color.toString().c_str();
-		WriteConsoleOutputCharacter(this->_hConsole, (LPCWSTR)buff, sizeof(buff), this->_pos, nullptr);
+		fputs(this->_color.toString().c_str(), stdout);
 	}
 };
 
-#endif PIXEL_H
+#endif PIXEL_HPP
