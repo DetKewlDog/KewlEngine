@@ -1,3 +1,4 @@
 * text=auto
 *.hpp linguist-language=C++
+*.h linguist-language=C++
 */stb_image.h linguist-vendored
